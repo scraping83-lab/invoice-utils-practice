@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "invoice-utils"
+version = "0.1.0"
+description = "Small invoice calculation utilities used for CI/CD demos."
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["invoice_utils*"]
+
+[tool.ruff]
+line-length = 100
