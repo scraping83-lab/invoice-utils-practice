@@ -11,3 +11,5 @@ pip install ruff pytest
 ruff check .
 pytest -v
 ```
+## Usage
+Install with pip, run the test suite with pytest.
