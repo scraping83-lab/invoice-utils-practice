@@ -1,7 +1,7 @@
 name: CI
 on:
   push:
-    branches: :[main]
+    branches: [main]
   pull_request: 
     branches: [main]
 jobs:
@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: 
-          pythobn-version: "3.12"
+          python-version: "3.12"
       - run: pip install ruff pytest
       - run: ruff check .
       - run: pytest -v 
