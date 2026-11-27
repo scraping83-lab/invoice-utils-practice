@@ -1,5 +1,13 @@
 """Core invoice calculations: subtotal, tax, total, and currency formatting."""
+─ python
+from invoice_utils import apply_discount, format_currency, subtotal, tax, total
 
+─ python
+def test_apply_discount():
+    assert apply_discount(100.00, 20) == 80.00
+def test_total_with_discount():
+    assert total([(2, 5.00)]) == 110.00
+    
 TAX_RATE = 0.0875
 
 
